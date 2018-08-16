@@ -1,0 +1,22 @@
+{
+  "name": "makeupxsolla",
+  "version": "1.0.0",
+  "description": "Выпускная работа на потоке frontend в xsolla",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XakimAA/makeup_artists.git"
+  },
+  "author": "angelhack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XakimAA/makeup_artists/issues"
+  },
+  "homepage": "https://github.com/XakimAA/makeup_artists#readme",
+  "devDependencies": {
+    "webpack": "^4.16.5"
+  }
+}
