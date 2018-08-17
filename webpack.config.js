@@ -7,12 +7,6 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
-  ],
   module : {
     rules: [ 
         { 
@@ -44,6 +38,10 @@ module.exports = {
         },
         {
             test: /\.css$/,
+            loader: "css-loader"
+         },
+        {
+            test: /\.css$/,
             use: [
               {
                 loader: MiniCssExtractPlugin.loader,
@@ -54,6 +52,12 @@ module.exports = {
               "css-loader"
             ]
           }
-    ]
-}
+        ]
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+          filename: "[name].css",
+          chunkFilename: "[id].css"
+        })
+      ]
 };
